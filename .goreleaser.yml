@@ -1,0 +1,17 @@
+# .goreleaser.yml
+# Build customization
+project_name: gscript
+builds:
+  - main: ./main.go
+    binary: ccdcgrab
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - 386
+    ldflags: -s
+# Archive customization
+archive:
+  format: zip
