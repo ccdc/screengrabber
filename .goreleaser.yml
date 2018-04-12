@@ -10,7 +10,6 @@ builds:
       - windows
     goarch:
       - amd64
-      - 386
     ldflags: -s
 # Archive customization
 archive:
